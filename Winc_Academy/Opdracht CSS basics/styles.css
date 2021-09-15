@@ -1,0 +1,26 @@
+body {
+    color:grey;
+    font-family:"Times New Roman", Times, serif;
+}
+.black-border {
+    border:5px solid black;
+}
+#green-background {
+    background-color:darkslategrey;
+}
+.title {
+    background-color:grey;
+    color:darkslategrey;
+    font-size:50px;
+}
+.line-height {
+    line-height:4px;
+}
+.right { 
+    float:right;
+    font-size:35px;
+}
+.stamp {
+	width: 500px;
+	height: 414px;
+	border: 8px dashed grey; }
