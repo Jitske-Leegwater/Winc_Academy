@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Receptenboek - Contact </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1> Contact </h1>
+    </header>
+
+    <main>
+        <form name="Contact" method="POST" data-netlify="true">
+            <p><label>Name: <input type="text" name="name" /></label></p>
+            <p><label>Email: <input type="email" name="email" /></label></p>
+            <p><label>Telefoonnummer: <input type="tel" name="Telefoonnummer" /></label></p>
+            <p><label>Leeftijd: <input type="number" name="Leeftijd" /></label></p>
+            <p><label>Geboortedatum: <input type="date" name="Geboortedatum" /></label></p>
+            <p><label>Gender: </label></p>
+                <p><input type="radio" id="Vrouw" name="Gender" /><label for="Vrouw">Vrouw</label></p>
+                <p><input type="radio" id="Man" name="Gender" /><label for="Man">Man</label></p>
+                <p><input type="radio" id="Onzijdig" name="Gender" /><label for="Onzijdig">Onzijdig</label></p>
+            <p><label>Favoriete cuisine: </label></p>
+                <p><label>Frans: <input type="checkbox" name="Frans" /></label></p>
+                <p><label>Italiaans: <input type="checkbox" name="Italiaans" /></label></p>
+                <p><label>Spaans: <input type="checkbox" name="Spaans" /></label></p>
+                <p><label>Arabisch: <input type="checkbox" name="Arabisch" /></label></p>
+            <p><label>Favoriete kleur van schort: <input type="color" name="favcolor" value="ffffff" /></label></p>
+            <p><label>Biografie: <textarea name="biografie"></textarea> </label></p>
+            <p><label>Upload je laatste recept: <input type="file" name="Laatste_recept" /></label></p>
+            <p><label>Url naar je receptenwebsite: <input type="url" name="url" /></label></p>
+
+            <p><button type="reset">Reset</button></p>
+            <p><button type="submit">Submit</button></p>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
