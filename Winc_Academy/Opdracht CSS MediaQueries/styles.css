@@ -1,0 +1,87 @@
+body {
+    color: grey;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.black-border {
+    border: 5px solid black;
+}
+#green-background {
+    background-color: darkslategrey;
+}
+.title {
+    background-color: grey;
+    color: darkslategrey;
+    font-size: 28px;
+}
+.line-height {
+    margin-left: 20px;
+}
+.stamp {
+	width: 90%px;
+	border: 8px dashed grey; 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.header {
+    border: 5px solid purple;
+    margin-bottom: 20px;
+}
+.center-picture {
+    height: 200px;
+    margin-left: 20%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding: 0px, 0px, 10px, 20px;
+}
+.main {
+    border: 5px solid yellowgreen;
+    margin-bottom: 20px;
+}
+.main h2 {
+    width: 500px;
+    margin: 0 auto;
+}
+.footer {
+    border: 5px solid deepskyblue;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+}
+footer li {
+    display: inline;
+    float: right;
+    font-size: 15px;
+    list-style-type: none;
+}
+footer li a {
+    background-color: lightskyblue;
+    color: mediumblue;
+    padding: 20px;
+    text-decoration: none;
+}
+footer li a:hover { 
+    background-color: mediumblue;
+    color: white;
+}
+.active { 
+    background-color: deepskyblue;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+  body {
+      Background-color: lightgrey;
+      color: black;
+      font-size: 16px;
+      line-height: 4px;
+  }  
+}
