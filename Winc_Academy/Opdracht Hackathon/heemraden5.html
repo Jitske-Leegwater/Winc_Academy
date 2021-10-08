@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Zwembadreviews in de buurt </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1> Zwembadreviews in de buurt </h1>
+        <p class="header_p"> Vind hier de leukste, gratis zwembaden in Heerhugowaard</p>
+    </header>
+
+    <nav>
+            <div class="navbar">
+                <a href="index.html"> Home </a>
+                <a href="wie_ben_ik.html"> Wie ben ik </a>
+                <a href="contact.html"> Contact </a>
+                <div class="dropdown"> 
+                    <button class="dropbtn" onclick="myFunction()"> Wijk 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="wijk_bomenwijk.html"> Bomenwijk </a>
+                        <a href="wijk_de_noord.html"> De Noord </a>
+                        <a href="wijk_heemraden.html"> Heemraden </a>
+                        <a href="wijk_molenwijk.html"> Molenwijk </a>
+                        <a href="wijk_schilderswijk.html"> Schilderswijk </a> 
+                    </div>
+                </div>
+            </div>
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+            }
+        }
+        </script>
+    </nav>
+
+    <main>
+        <h2> Adres, 1234 AA, Heerhugowaard</h2>
+        <hr>
+        <img class="img" src="heemraden5.jpg">
+        <div class="scorebord">
+            <p> Grootte: <img class="score" src="3-sterren.png"> </p>
+            <p> Waterkwaliteit: <img class="score" src="4-sterren.png"> </p>
+            <p> Omgeving: <img class="score" src="5-sterren.png"> </p>
+            <p> Gastvrijheid: <img class="score" src="4-sterren.png"> </p>
+            <p> Bereikbaarheid: <img class="score" src="4-sterren.png"> </p>
+        </div>
+        <a href="wijk_heemraden.html"> Terug </a>
+    </main>
+
+    <footer>
+        <p> Deze website is aan elkaar geplakt van fantasie en plezier </p>
+    </footer>
+</body>
+
+</html>
