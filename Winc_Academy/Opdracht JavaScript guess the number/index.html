@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ 
+<head> 
+    <title> Guess the number! </title>
+</head> 
+
+<body>
+
+    <p> Welkom!
+      <button onclick="myFunction()">Wat is je naam?</button>  
+    </p> 
+
+
+
+    <script>
+        const myFunction = function() {
+            var person = prompt("Wat is je naam?", "Harry Potter");
+            if (person != null) {
+                alert('Hey ' + person);
+                nummerInput(person);
+            };
+        };
+
+        const randomNumber = function(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); 
+       };
+
+        const nummerInput = function(person) {
+            var min = prompt('Voer in wat het kleinste nummer is dat je wilt raden', 'voorbeeld: 1');
+            while (isNaN(min)) {
+                var min = prompt('Voer in wat het kleinste nummer is dat je wilt raden', 'voorbeeld: 1');
+            }; 
+            var max = prompt('Voer in wat het grootste nummer is dat je wilt raden', 'voorbeeld: 25');
+            while (isNaN(max) || (max <= min)) {
+                var max = prompt('Voer in wat het grootste nummer is dat je wilt raden', 'voorbeeld: 25');
+            };
+            var howManyTimes = prompt('Voer in hoeveel keer je wilt raden', 'voorbeeld: 5');
+            while (isNaN(howManyTimes)) {
+                var howManyTimes = prompt('Voer in hoeveel keer je wilt raden', 'voorbeeld: 5');
+            };
+            var secretNumber = randomNumber(min, max);
+            nummerRaden(howManyTimes, secretNumber, person);
+        };
+
+        const nummerRaden = function(howManyTimes, secretNumber, person) {
+            for (i=1; i <= howManyTimes; i++) {
+                var Guess = prompt('Raad het nummer');
+                if (Guess * 1 === secretNumber) {
+                    alert('Gefeliciteerd je hebt gewonnen!');
+                    alert('e.g: Dag ' + person + '. Tot de volgende keer');
+                    var i = howManyTimes + 1;
+                } else {
+                    alert('Dat is niet correct');
+                    alert('Dit was je ' + i + 'e poging');
+                    alert('Je hebt nog ' + (howManyTimes - i) + ' pogingen over');
+                    if (howManyTimes - i == 0) {
+                        alert('Het juiste nummer was ' + secretNumber)
+                    };
+                }; 
+            };
+        };
+
+    </script>
+
+</body>
+</html>
