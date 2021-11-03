@@ -1,0 +1,51 @@
+ .dropdown {
+    float: left;
+}
+    
+#dropbtn {
+    cursor: pointer;
+    width: 40px;
+    margin: 10px 16px;
+}
+    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+    
+.show {
+    display: block;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.grey {
+    background-color: lightgrey;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: rgb(235, 86, 86);
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.purple {
+    background-color: rgb(156, 50, 156);
+}
